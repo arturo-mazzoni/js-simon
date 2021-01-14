@@ -5,18 +5,24 @@
 
 var array = [];
 
-for (var i = 0; i < 5; i++){
+var i = 0;
+while (array.length < 5){
   numRandom = Math.floor((Math.random() *100) + 1);
-  array.push(numRandom);
+  if (array.includes(numRandom) == false){
+    array.push(numRandom);
+  }
+  i++
 }
 
-console.log(array);
+tentativiUtente = tentativi;
+
+console.log(tentativiUtente);
 
 alert("Memorize these numbers:" + " " + array);
 
 setTimeout(tentativi, 3000);
 
-
+var
 
 
 
@@ -29,6 +35,7 @@ function tentativi(){
     var numUtente = parseInt(prompt("Inserisci un numero"));
     arrayTentativi.push(numUtente);
   }
+
   return arrayTentativi;
 }
 
