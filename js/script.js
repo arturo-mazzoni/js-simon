@@ -21,6 +21,8 @@ alert("Memorize these numbers:" + " " + array);
 
 setTimeout(tentativi, 3000);
 
+var tentativiUtente = tentativi();
+
 console.log(tentativiUtente);
 
 // FUNCTIONS*****
@@ -28,12 +30,13 @@ function tentativi(){
 
   var arrayTentativi = [];
 
-  for (var i = 0; arrayTentativi.length < 5; i++){
+  while (arrayTentativi.length < 5){
     var numUtente = parseInt(prompt("Inserisci un numero"));
 
-    if (!arrayTentativi.includes(numUtente)){
+    if (arrayTentativi.includes(numUtente) == false){
       arrayTentativi.push(numUtente);
     }
+    i++
   }
 
   return arrayTentativi;
