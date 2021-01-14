@@ -5,14 +5,12 @@
 
 var array = [];
 
-var i = 0;
 while (array.length < 5){
   numRandom = Math.floor((Math.random() *100) + 1);
 
   if (array.includes(numRandom) == false){
     array.push(numRandom);
   }
-  i++
 }
 
 console.log(array);
@@ -21,9 +19,6 @@ alert("Memorize these numbers:" + " " + array);
 
 setTimeout(tentativi, 3000);
 
-var tentativiUtente = tentativi();
-
-console.log(tentativiUtente);
 
 // FUNCTIONS*****
 function tentativi(){
@@ -33,11 +28,17 @@ function tentativi(){
   while (arrayTentativi.length < 5){
     var numUtente = parseInt(prompt("Inserisci un numero"));
 
+    // controllo che in num non sia gia stato digitato
     if (arrayTentativi.includes(numUtente) == false){
       arrayTentativi.push(numUtente);
     }
-    i++
+    // controllo se il numero è presente in array
+
+    if (array.includes(numUtente) == true){
+      
+    }
   }
+  console.log(arrayTentativi);
 
   return arrayTentativi;
 }
