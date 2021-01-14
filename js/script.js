@@ -4,7 +4,6 @@
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
 var array = [];
-var arrayTentativi = [];
 
 for (var i = 0; i < 5; i++){
   numRandom = Math.floor((Math.random() *100) + 1);
@@ -17,14 +16,23 @@ alert("Memorize these numbers:" + " " + array);
 
 setTimeout(tentativi, 3000);
 
+
+
+
+
+// FUNCTIONS*****
 function tentativi(){
+
+  var arrayTentativi = [];
+
   for (var i = 0; i < 5; i++){
     var numUtente = parseInt(prompt("Inserisci un numero"));
     arrayTentativi.push(numUtente);
   }
+  return arrayTentativi;
 }
 
-console.log(arrayTentativi);
+
 
 
 
