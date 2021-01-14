@@ -26,33 +26,14 @@ function tentativi(){
 
 console.log(arrayTentativi);
 
-if 
-}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// sjhbdxwhbdw
+// Creo un array vuoto,
+// genero dei numeri rando e li assegno all'array,
+// creo un alert dove appare il contenuto dell'array,
+// creo una funzione che chiede per cinque volte all'utente un numero,
+// richamo la funzione con un ritardo di un tot di secondi,
+// creo un altro array dove inserisco i numeri dell'utente,
+// confronto i due array per vedere quanti e quali numeri sono contenuti in entrambi.
