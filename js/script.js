@@ -17,10 +17,6 @@ while (array.length < 5){
 
 console.log(array);
 
-tentativiUtente = tentativi();
-
-
-
 alert("Memorize these numbers:" + " " + array);
 
 setTimeout(tentativi, 3000);
